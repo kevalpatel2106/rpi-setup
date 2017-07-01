@@ -19,7 +19,7 @@ sudo apt-get clean
 sudo apt-get autoremove
 
 # INTEGRATE Z-RAM
-sudo wget -O /usr/bin/zram.sh https://raw.githubusercontent.com/novaspirit/rpi_zram/master/zram.sh
+sudo wget -O /usr/bin/zram.sh https://raw.githubusercontent.com/kevalpatel2106/rpi-setup/master/zram.sh
 sudo chmod +x /usr/bin/zram.sh
 cp /etc/rc.local /tmp
 sed -i -e 's/exit 0/usr\/bin\/zram.sh \& exit 0/g' /tmp/rc.local
