@@ -26,5 +26,10 @@ sed -i -e 's/exit 0/usr\/bin\/zram.sh \& exit 0/g' /tmp/rc.local
 cat /tmp/rc.local > /etc/rc.local
 sudo rm -rf /tmp/rc.local
 
+#Apply rasbpian configs
+sudo sh -c "echo 'arm_freq=1200' >> /boot/config.txt"
+sudo sh -c "echo 'hdmi_group=2' >> /boot/config.txt"
+sudo sh -c "echo 'hdmi_mode=35' >> /boot/config.txt"
+
 # Reboot
 sudo reboot
