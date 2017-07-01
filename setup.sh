@@ -28,7 +28,6 @@ sudo rm -rf /tmp/rc.local
 
 #Apply rasbpian configs
 sudo sh -c "echo 'arm_freq=1200' >> /boot/config.txt" #CLOCK 1.2GHz
-sudo sh -c 'printf "dtoverlay=sdhost,overclock_50=75\n" >> /boot/config.txt'  #OVER CLOCKING SDCARD TO 75
 sudo sh -c "echo 'hdmi_group=2' >> /boot/config.txt"
 sudo sh -c "echo 'hdmi_mode=35' >> /boot/config.txt"
 
